@@ -1,7 +1,10 @@
 # THAT ROBOT GAME YOU ALWAYS THOUGHT OF PLAYING
 
 ### How to play
-Start the application and the game will run at http://localhost:8080
+
+Start the application with: `gradle bootRun`
+
+and then the application will run at http://localhost:8080
 
 A new game is launched every time you click on the start button on the homepage.
 
