@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>THAT ROBOT GAME</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+        <div id="UI">
+            <div class="topdiv">
+                <h3 align="center">THAT ROBOT GAME YOU ALWAYS THOUGHT OF PLAYING</h3>
+            </div>
+            <div class="row">
+                <div class="col" align="center" id="btnGroupDiv">
+                    <div class="btn-group text-center" role="group">
+                        <button type="button" class="btn btn-outline-secondary mr-1" id="exBtn1">Example Move 1</button>
+                        <button type="button" class="btn btn-outline-secondary mr-1" id="exBtn2">Example Move 2</button>
+                        <button type="button" class="btn btn-outline-secondary mr-1" id="exBtn3">Example Move 3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" align="right">
+                    <form>
+                        <div class="form-group right" id="formGroup">
+                            <textarea class="form-control" id="robotStepsInput" aria-describedby="emailHelp" placeholder="Write here the moves for the Robot!"></textarea>
+                            <small id="robotStepsInputHelp" class="form-text text-muted text-center">Write the steps you would like the robot to take</small>
+                        </div>
+                        <div class="text-center" id="submitReset">
+                            <button id="submitMoves" class="btn btn-dark" type="button">Move the Robot!</button>
+                            <button id="reset" class="btn btn-outline-success" type="reset" onclick="resetEverything();">RESET</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col" align="left">
+                    <div id="tableDiv">
+                        <table class="robotboard">
+                            <tr class="robotboard">
+                                <td class="robotboard" id="00"></td>
+                                <td class="robotboard" id="10"></td>
+                                <td class="robotboard" id="20"></td>
+                                <td class="robotboard" id="30"></td>
+                                <td class="robotboard" id="40"></td>
+                            </tr>
+                            <tr class="robotboard">
+                                <td class="robotboard" id="01"></td>
+                                <td class="robotboard" id="11"></td>
+                                <td class="robotboard" id="21"></td>
+                                <td class="robotboard" id="31"></td>
+                                <td class="robotboard" id="41"></td>
+                            </tr>
+                            <tr class="robotboard">
+                                <td class="robotboard" id="02"></td>
+                                <td class="robotboard" id="12"></td>
+                                <td class="robotboard" id="22"></td>
+                                <td class="robotboard" id="32"></td>
+                                <td class="robotboard" id="42"></td>
+                            </tr>
+                            <tr class="robotboard">
+                                <td class="robotboard" id="03"></td>
+                                <td class="robotboard" id="13"></td>
+                                <td class="robotboard" id="23" ></td>
+                                <td class="robotboard" id="33"></td>
+                                <td class="robotboard" id="43"></td>
+                            </tr>
+                            <tr class="robotboard">
+                                <td class="robotboard" id="04"></td>
+                                <td class="robotboard" id="14"></td>
+                                <td class="robotboard" id="24"></td>
+                                <td class="robotboard" id="34"></td>
+                                <td class="robotboard" id="44"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="robotOutputGroup">
+                        <input id="robotStateOutput" class="form-control" value="0 0 EAST" type="text" readonly>
+                        <small align="left" id="robotStateOutputHelp" class="form-text text-muted text-center">Robot's current state</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="startbtndiv" class="text-center">
+            <button class="btn btn-success btn-lg" type="button" id="startbtn">START</button>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+</html>

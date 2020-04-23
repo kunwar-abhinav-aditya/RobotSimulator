@@ -1,0 +1,89 @@
+#robotStepsInput {
+    height: 350px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    resize: none;
+}
+
+#robotStepsInput:hover {
+    background-color: #ffffff;
+    color: #3d3d3d;
+    border: 12px solid #333;
+}
+
+h3 {
+    color:#ffffff;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+button {
+    border-radius: 10px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.topdiv {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.btn-dark:hover {
+  background-color: #008CBA; /* Green */
+  color: #ffffff;
+}
+
+td.robotboard {
+    text-align: center;
+    width: 70px; height: 70px;
+    border: 2px solid #333; /* */
+}
+
+#robotOutputGroup {
+    width: 60%;
+}
+
+.px-2 {
+  padding-left: ($spacer-x * .5) !important;
+  padding-right: ($spacer-x * .5) !important;
+}
+
+#tableDiv {
+    width: 60%;
+    padding-bottom: 30px;
+}
+
+#formGroup {
+    width: 60%;
+}
+
+#formGroup:before {
+	content: "";
+	float: left;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+#submitReset {
+    width: 60%;
+}
+
+#btnGroupDiv {
+    width: 60%;
+    padding-bottom: 30px;
+}
+
+#startbtndiv {
+    border: none;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    padding: 2px;
+}
